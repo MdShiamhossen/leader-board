@@ -3,7 +3,7 @@
 
             /* navigation style start here  */
             body{
-                background-color: #638cb05b;
+                background-color: lightslategray;
                 margin: 0;
                 padding: 0;
                 font-family: "Poppins";
@@ -16,7 +16,7 @@
             }
             .navigation-head{
                 display: flex;
-                background-color: blueviolet;
+                
                 justify-content: space-between;
             }
             .navigation{
@@ -73,9 +73,16 @@
                 grid-row-gap: 20px;
                 margin: 30px 0px;
             }
+            .player:hover{
+                background-color: lightslategray;
+                padding: 10px;
+                border-radius: 20px;
+                color: white;
+            }
             .player{
                 display: flex;
                 align-items: center;
+                cursor: pointer;
             }
             .player img{
                 width: 69px;
@@ -93,6 +100,7 @@
                 display: flex;
                 justify-content: center;
                 margin: 15px 0px;
+                cursor: pointer;
             }
             .blog img{
                 width: 200px;
@@ -108,6 +116,12 @@
             .blog-title p{
                 font-size: 0.8em;
             }
+            .blog:hover{
+                background-color: lightslategray;
+                padding: 20px 0px;
+                border-radius: 20px;
+                color: white;
+            }
             .course-table{
                 display: flex;
                 justify-content: center;
@@ -117,6 +131,7 @@
                 margin: 0px 5px;
                 border-radius: 5px;
                 padding: 10px;
+                cursor: pointer;
             }
             .course img{
                 width: 92%;
@@ -152,3 +167,82 @@
             .time p{
                 margin-left: 5px;
             }
+            .course:hover{
+                background-color: rgba(119, 136, 153, 0.648);
+                color: white;
+                
+            }
+
+/* responsive layout desing start here */
+
+@media (max-width: 700px) {
+
+    .navigation-head{
+       
+        background-color: lightslategray;
+        
+    }
+    
+    .players{
+        display: grid;
+        
+    }
+    .player:hover{
+        background-color: lightslategray;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .top-players-res{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .top-blog{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog img{
+        width: 50%; 
+    }
+    .blog-title{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+    .blog:hover{
+        background-color: lightslategray;
+        padding: 20px 0px;
+        border-radius: 20px;
+        color: white;
+    }
+    .course-table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .course{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+        border-radius: 30px;
+        font-size: 30px  
+    }
+    .course:hover{
+        background-color: rgba(119, 136, 153, 0.648);
+        color: white;
+        
+    }
+    .course img{
+        width: 97%;
+        
+    }
+    
+}
